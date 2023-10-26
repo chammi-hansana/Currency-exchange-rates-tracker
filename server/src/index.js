@@ -66,6 +66,7 @@ app.get("/convert", async (req, res) => {
     res.status(500).json({ error: "An error occurred" });
   }
 });
+
 //all currences
 app.get("/getAllCurrencies", async (req, res) => {
   const namesURl = `https://openexchangerates.org/api/currencies.json?app_id=570b10d3bdb24590827584f7d370a078`;
